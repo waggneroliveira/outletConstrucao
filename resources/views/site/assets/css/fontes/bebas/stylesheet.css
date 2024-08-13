@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueLight.eot');
+    src: url('BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeueLight.woff2') format('woff2'),
+        url('BebasNeueLight.woff') format('woff'),
+        url('BebasNeueLight.ttf') format('truetype'),
+        url('BebasNeueLight.svg#BebasNeueLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Angelface';
+    src: url('Angelface.eot');
+    src: url('Angelface.eot?#iefix') format('embedded-opentype'),
+        url('Angelface.woff2') format('woff2'),
+        url('Angelface.woff') format('woff'),
+        url('Angelface.ttf') format('truetype'),
+        url('Angelface.svg#Angelface') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('BebasNeueBook.eot');
+    src: url('BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+        url('BebasNeueBook.woff2') format('woff2'),
+        url('BebasNeueBook.woff') format('woff'),
+        url('BebasNeueBook.ttf') format('truetype'),
+        url('BebasNeueBook.svg#BebasNeueBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

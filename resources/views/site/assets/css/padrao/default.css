@@ -1,0 +1,432 @@
+/*
+Reseta nossa pagina dos estilos padroes do navegador
+reset */
+body {
+    font-size: 16px;
+  }
+  input[type="text"] {
+    font-size: inherit;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio:0) { 
+    select,
+    textarea,
+    input {
+      font-size: 16px;
+    }
+  }
+  root {display: block;}
+  * {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      box-sizing: border-box;
+      outline: none;
+  }
+  a {
+      color: inherit;
+      text-decoration: none;
+  }
+  li {list-style: none;}
+  input, textarea, select {outline: none;}
+  /* Estilos loading email */
+  #loadingEmail{
+    position: fixed;
+    top: -150px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    z-index: 2000;
+    background-color: #2e282a;
+    font: 14px 'ralewaybold';
+    color: #dadada;
+    padding: 10px 30px;
+    border-radius: 50px;
+  }
+  #loadingEmail.active{
+    top: 5px;
+    left: 50%;
+  }
+  #loadingEmail img{
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    margin-right: 20px;
+  }
+  #loadingEmail p{
+    line-height: 23px;
+    font-size: 13px;
+    color: #949494;
+  }
+  /* fim reset */
+  /* grides */
+  #pagina{
+      width: 100%;
+      display: block;
+      overflow: hidden;
+  }
+  #miolo{
+      width: 100%;
+      display: table;
+      position: relative;
+  }
+  .wrap { /* padrao de largura dos site, matem o conteudo centralizado e com tamanho de 940px largura */
+      width: 95%;
+      max-width: 1200px;
+      display: table;
+      position: relative;
+      margin: 0 auto;
+      padding: 80px 0;
+  } 
+  .secao { /* separar uma secao da outra, ela e full entao nao precisa mexer na responsividade */
+      width: 100%;
+      display: table;
+      position: relative;
+  }
+  .row { /* igual a secao porem a mesma esta com display block */
+      width: 100%;
+      display: block;
+      position: relative;
+  }
+  
+  /* alinhamento
+  Mantem a quantidade de box independente do tamnaho do pai, quantidade de acordo com a numeracao depois do x limtado a 6 box
+  */
+  .col-full{
+      width: 100%;
+  }
+  .col-x2 {
+      width: 50%;
+  }
+  .col-x3 {
+      width: 33.31%;
+  }
+  .col-x4 {
+      width: 25%;
+  }
+  .col-x5 {
+      width: 20%;
+  }
+  .col-x6 {
+      width: 16.65%;
+  }
+  .col-x8 {
+      width: 2.80%;
+  }
+  [class*='col-'] {
+      display: inline-block;
+      margin-right: -4.4px;
+  }
+  .col-1 {
+      width: 8.33%;
+  }
+  .col-2 {
+      width: 16.67%; 
+  }
+  .col-3 {
+      width: 25%;  
+  }
+  .col-4 {
+      width: 33.33%;
+  }
+  .col-5 {
+      width: 41.66%;
+  }
+  .col-6 {
+      width: 50%;
+  }
+  .col-7 {
+      width: 58.3%;
+  }
+  .col-8 {
+      width: 66.7%;
+  }
+  .col-9 {
+      width: 75%;
+  }
+  .col-10 {
+      width: 83.28%;
+  }
+  .col-11 {
+     width: 91.7%;
+  }
+  .col-12 {
+      width: 100%;
+  }
+  .box { /* deixa o box com tamanho de acordo com o seu conteudo, muito usado para englobar imagens */
+      display: table;
+      position: relative;
+  }
+  .col-inline { /* funciona como um float, mas esse e bom para deixar responsivo OBS: evite usar muito float, a menos que seja nescessário */
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin-right: -3.8px;
+  }
+  .content { /* usado junto com os col-x pois o col-x nao pode receber margin entao aplicamos padding e essa classe que segura o conteudo, OBS: essa classe e filha do col-x */
+      width: 100%;
+      display: table;
+      position: relative;
+  }
+  .container { /* pai da classe central, em conjunto centraliza o conteudo verticalmente */
+      width: 100%;
+      height: 100%;
+      display: table;
+      position: relative;
+  }
+  .central { /* filha da classe container, em conjunto centraliza o conteudo verticalmente */
+      width: 100%;
+      height: 100%;
+      display: table-cell;
+      position: relative;
+      vertical-align: middle;
+  }
+  .clearFix {clear: both;} /* Bloqueia qualquer float */
+  .image-adaptavel img {margin: 0 auto;}/* centraliza a imagem filha dessa classe */
+  .ajusta-image img {width: 100%;}/* ajusta a imagem filha dessa classe ao tamanho do pai */
+  .esq {float: left;}
+  .dir {float: right;}
+  .botao-link{cursor: pointer;}/* essa classe usamos muito em input type button porem vamos deixar de fazer funcoes js de click com a tag a para nao prejudicar o SEO */
+  /* fim alinhamento */
+  /* estilizacao das fontes */
+  p { /* padrao para toda tag p do site */
+      line-height: 23px;
+      font-size: 14px;
+      color: #b1b1b1;
+      font-family: 'Alleyn-regular';
+      font-weight: normal;
+  }
+  b {/* padrao para toda tag b do site */
+      font-family: 'ralewaysemibold';
+      font-weight: 900;
+  }
+  strong { /* padrao para toda tag strong do site */
+      font-family: 'ralewayextrabold';
+      font-weight: 900;
+  }
+  .icon-text {font-family: 'fontello';}/* guarda a fonte com os icones de fonte */
+  /* fim estilizacao das fontes */
+  /* estilos padrao */
+  html, body {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      font-size: 16px;
+  }
+  img {display: block;}/* todas as imagens recebem esse display pois as mesmas tem que ser block */
+  .cont-absolute { /* deixar um elemnto com os padroes absolute */
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+  }
+  .link-full {/* aplicada na tag a para que o link ocupe todo o box */
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 20;
+  }
+  .topo-fixo { /* serve para topos que nao sao flutuantes */
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 500;
+  }
+  .trans-fast{ /* aplica a transicao no objeto, usado muito nos elementos que tem hover */
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+  }
+  .trans-slow{/* aplica a transicao no objeto, usado muito nos elementos que tem hover */
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+  }
+  .radius-full{ /* deixa o objeto redondo, lembrando que o objeto ja tem que esta com tamnho definido */
+      -webkit-border-radius: 100%;
+      border-radius: 100%;
+  }
+  .radius-med{/* deixa o objeto com bordas arredondada, usado muito nos botoes e inputs*/
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+  }
+  .radius-min{/* deixa o objeto com bordas um pouco arredondada, usado muito nas imagens e box*/
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+  }
+  /* Sidebar */
+  .sidebar {
+      width: 300px;
+      height: 100%;
+      display: block;
+      position: fixed;
+      top: 0;
+      right: -300px;
+      z-index: 2000;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.6s ease;
+      background-color: #fff;
+  }
+  .sidebar.aberto{
+      right: 0;
+  }
+  .sidebar .inside {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      overflow-y: auto;
+  }
+  .fundo-sidebar {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      opacity: 0.7;
+      background: #000;
+  }
+  
+  /* estilo accordion */
+  .aba_accordion {
+      display: none;
+  }
+  /* padrao banner */
+  #banner{
+      width: 100%;
+      height: 670px;
+      display:block;
+      position:relative;
+      z-index:10;
+      overflow:hidden;
+  }
+  #banner ul {
+      width: 100%;
+      height: 100%;
+      display:block;
+      position:relative
+  }
+  
+  #banner ul li {
+      width: 100%;
+      height: 79vh;
+      display:block;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:1;
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  #banner #pagination {
+      width:auto;
+      height:auto;
+      display:none;
+      position:absolute;
+      bottom:30px;
+      left:50%;
+      z-index:100;
+  }
+  #banner #pagination a {
+      width:15px;
+      height:15px;
+      display:block;
+      position:relative;
+      float:left;
+      font-size:0;
+      border-radius: 100%;
+      background: #fff;
+      margin:0 4px;
+  }
+  #banner #pagination a:hover,#banner #pagination a.active {
+     background: #db7f00;
+  }
+  #banner #pagination span {
+      width:100%;
+      height:100%;
+      display:block;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:20;
+  }
+  #banner .btn {
+      width:148px;
+      height:37px;
+      display:none;
+      position:absolute;
+      top:50%;
+      margin-top:-45px;
+      cursor:pointer;
+      z-index:10;
+      font-size:0;
+  }
+  #banner .btn span {
+      width:100%;
+      height:100%;
+      display:block;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:10
+  }
+  #banner .btn .desativa {
+      width:100%;
+      height:100%;
+      display:block;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:20
+  }
+  
+  /* recaptch */
+  #recaptcha{
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  #recaptcha a{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+  }
+  #recaptcha a.verif{
+    border-color: rgba(0, 128, 0, 0.35);
+  }
+  #recaptcha a i{
+    font-style: normal;
+    color: green;
+    font-size: 22px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #recaptcha a.verif i{
+    opacity: 1;
+    visibility: visible;
+  }
+  #recaptcha span{
+    vertical-align: middle;
+    font: 15px 'tofino-regular';
+    color:#5f5d5d;
+  }

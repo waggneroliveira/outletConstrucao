@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Ageo Personal Use';
+    src: url('AgeoPersonalUse-Regular.eot');
+    src: url('AgeoPersonalUse-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AgeoPersonalUse-Regular.woff2') format('woff2'),
+        url('AgeoPersonalUse-Regular.woff') format('woff'),
+        url('AgeoPersonalUse-Regular.ttf') format('truetype'),
+        url('AgeoPersonalUse-Regular.svg#AgeoPersonalUse-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ageo Personal Use';
+    src: url('AgeoPersonalUse-SemiBold.eot');
+    src: url('AgeoPersonalUse-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('AgeoPersonalUse-SemiBold.woff2') format('woff2'),
+        url('AgeoPersonalUse-SemiBold.woff') format('woff'),
+        url('AgeoPersonalUse-SemiBold.ttf') format('truetype'),
+        url('AgeoPersonalUse-SemiBold.svg#AgeoPersonalUse-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ageo Personal Use';
+    src: url('AgeoPersonalUse-Bold.eot');
+    src: url('AgeoPersonalUse-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AgeoPersonalUse-Bold.woff2') format('woff2'),
+        url('AgeoPersonalUse-Bold.woff') format('woff'),
+        url('AgeoPersonalUse-Bold.ttf') format('truetype'),
+        url('AgeoPersonalUse-Bold.svg#AgeoPersonalUse-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ageo Personal Use';
+    src: url('AgeoPersonalUse-Light.eot');
+    src: url('AgeoPersonalUse-Light.eot?#iefix') format('embedded-opentype'),
+        url('AgeoPersonalUse-Light.woff2') format('woff2'),
+        url('AgeoPersonalUse-Light.woff') format('woff'),
+        url('AgeoPersonalUse-Light.ttf') format('truetype'),
+        url('AgeoPersonalUse-Light.svg#AgeoPersonalUse-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ageo Personal Use';
+    src: url('AgeoPersonalUse-Thin.eot');
+    src: url('AgeoPersonalUse-Thin.eot?#iefix') format('embedded-opentype'),
+        url('AgeoPersonalUse-Thin.woff2') format('woff2'),
+        url('AgeoPersonalUse-Thin.woff') format('woff'),
+        url('AgeoPersonalUse-Thin.ttf') format('truetype'),
+        url('AgeoPersonalUse-Thin.svg#AgeoPersonalUse-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ageo Personal Use';
+    src: url('AgeoPersonalUse-Medium.eot');
+    src: url('AgeoPersonalUse-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AgeoPersonalUse-Medium.woff2') format('woff2'),
+        url('AgeoPersonalUse-Medium.woff') format('woff'),
+        url('AgeoPersonalUse-Medium.ttf') format('truetype'),
+        url('AgeoPersonalUse-Medium.svg#AgeoPersonalUse-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ageo Personal Use';
+    src: url('AgeoPersonalUse-Heavy.eot');
+    src: url('AgeoPersonalUse-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('AgeoPersonalUse-Heavy.woff2') format('woff2'),
+        url('AgeoPersonalUse-Heavy.woff') format('woff'),
+        url('AgeoPersonalUse-Heavy.ttf') format('truetype'),
+        url('AgeoPersonalUse-Heavy.svg#AgeoPersonalUse-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+

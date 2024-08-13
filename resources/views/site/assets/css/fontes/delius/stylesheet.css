@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Delius';
+    src: url('Delius-Regular.eot');
+    src: url('Delius-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Delius-Regular.woff2') format('woff2'),
+        url('Delius-Regular.woff') format('woff'),
+        url('Delius-Regular.ttf') format('truetype'),
+        url('Delius-Regular.svg#Delius-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

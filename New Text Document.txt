@@ -1,0 +1,46 @@
+
+INSERT INTO `categories` (`id`, `title`, `featured`, `active`, `path_image`, `deleted_at`, `created_at`, `updated_at`) VALUES
+(1, 'Bebidas', 1, 1, 'screenshot-1-1588889484.png', NULL, '2020-05-08 04:11:24', '2020-05-08 04:14:47'),
+(2, 'Chocolate', 1, 1, 'a4d2a28d-787f-4739-9008-648ae6e0dc1d-1589325033.jpeg', NULL, '2020-05-13 05:10:33', '2020-05-13 05:10:33');
+
+INSERT INTO `subcategories` (`id`, `category_id`, `title`, `active`, `slug`, `deleted_at`, `created_at`, `updated_at`) VALUES
+(1, 1, 'Refrigerante', 1, 'refrigerante', NULL, '2020-05-08 04:11:44', '2020-05-08 04:11:44'),
+(2, 1, 'Cerveja', 1, 'cerveja', NULL, '2020-05-08 04:11:53', '2020-05-08 04:11:53');
+
+INSERT INTO `coupons` (`id`, `coupon`, `amount`, `use_limit`, `fixed_value`, `first_order_only`, `active`, `deleted_at`, `created_at`, `updated_at`) VALUES
+(1, 'cupom1', '10.00', NULL, 1, 0, 1, NULL, '2020-05-08 17:32:52', '2020-05-13 06:26:21');
+
+
+INSERT INTO `extras` (`id`, `extra`, `active`, `deleted_at`, `created_at`, `updated_at`) VALUES
+(1, 'Garfo Plastico', 1, NULL, '2020-05-23 21:48:22', '2020-05-23 21:48:22');
+
+INSERT INTO `products` (`id`, `category_id`, `subcategory_id`, `title`, `description`, `amount`, `promotinal_value`, `promotion`, `active`, `slug`, `deleted_at`, `created_at`, `updated_at`) VALUES
+(1, 1, 1, 'Coca', '<p>Coca cola em lata</p>', '8.00', '6.00', 1, 1, 'coca', NULL, '2020-05-08 04:12:42', '2020-05-08 04:12:42'),
+(2, 1, 2, 'Heineken', '<p>Cerveja 350ml</p>', '14.00', '12.55', 1, 1, 'heineken', NULL, '2020-05-08 04:13:55', '2020-05-09 23:48:07');
+
+INSERT INTO `product_galleries` (`id`, `product_id`, `path_image`, `product_cover`, `created_at`, `updated_at`) VALUES
+(1, 1, 'a4d2a28d-787f-4739-9008-648ae6e0dc1d-1588889562.jpeg', 1, '2020-05-08 04:12:42', '2020-05-08 04:12:42'),
+(2, 2, 'a4d2a28d-787f-4739-9008-648ae6e0dc1d-1589038803.jpeg', 1, '2020-05-09 21:40:03', '2020-05-09 21:40:03');
+
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `active`, `super_admin`, `deleted_at`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Wasgton', 'wasgton.it@gmail.com', '2020-04-28 14:14:38', '$2y$10$4aXo/3XkprLpslmvAbopgOyvjzFqFh.uFPXSHP9HattJMHCDktOuK', 1, 1, NULL, 'CpFZg8YgT7Dow5dH2MXk3oTl3AWl4QZYMetwXo4D3GS6zFifKTRhIsrW7RVC', '2020-05-07 03:00:15', '2020-05-07 03:00:17');
+
+
+INSERT INTO `cities` (`id`, `city`, `active`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'Lauro de Freitas', 1, '2020-05-18 02:41:47', '2020-05-18 02:41:47', NULL);
+
+INSERT INTO `regions` (`id`, `city_id`, `region`, `amount`, `active`, `deleted_at`, `created_at`, `updated_at`) VALUES
+(1, 1, 'Centro', '10.00', 1, NULL, '2020-05-18 02:42:14', '2020-05-18 02:42:14'),
+(2, 1, 'Vila Praiana', '10.00', 1, NULL, '2020-05-19 19:34:33', '2020-05-19 19:34:33');
+
+INSERT INTO `customers` (`id`, `name`, `email`, `cpf`, `phone`, `email_verified_at`, `password`, `active`, `deleted_at`, `remember_token`, `created_at`, `updated_at`) VALUES
+(5, 'Wasgton Rodrigues Junior', 'wasgton.it@gmail.com', '06076643552', '71997074833', NULL, '$2y$10$O.rAmPBQ2A0069GZsZ2PQ.zqtC4fwc2BDluAUa7Y7zB4w9cQ2pOPS', 1, NULL, NULL, '2020-05-09 20:44:26', '2020-05-09 20:44:26');
+
+INSERT INTO `adresses` (`id`, `region_id`, `customer_id`, `public_place`, `zip_code`, `complement`, `reference`, `default`, `deleted_at`, `created_at`, `updated_at`) VALUES
+(1, 2, 5, 'Rua Almirante Barroso', '42.705-300', 'teste', 'teste', 1, NULL, '2020-05-18 02:42:59', '2020-05-25 18:27:26'),
+(2, 1, 5, '1ª Travessa São Jorge', '42.703-580', 'teste', 'teste', 0, NULL, '2020-05-25 20:26:54', '2020-05-25 20:26:54');
+
+INSERT INTO `orders` (`id`, `customer_id`, `address_id`, `status`, `amount`, `coupon`, `payment`, `created_at`, `updated_at`) VALUES
+(1, 5, 1, 1, '10.00', 'cupom1', NULL, NULL, NULL);
+

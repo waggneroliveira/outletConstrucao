@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'tangak';
+    src: url('tangak.eot');
+    src: url('tangak.eot?#iefix') format('embedded-opentype'),
+        url('tangak.woff2') format('woff2'),
+        url('tangak.woff') format('woff'),
+        url('tangak.ttf') format('truetype'),
+        url('tangak.svg#tangak') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

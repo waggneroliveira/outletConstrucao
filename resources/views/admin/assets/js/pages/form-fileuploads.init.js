@@ -1,0 +1,1 @@
+$(".dropify").dropify({messages:{default:"Arraste e solte um arquivo aqui ou clique para carregar",replace:"Arraste e solte ou clique para substituir",remove:"Remover",error:"Opa, algo errado foi acrescentado."},error:{fileSize:"O tamanho do arquivo é muito grande (2M no máximo)."}});

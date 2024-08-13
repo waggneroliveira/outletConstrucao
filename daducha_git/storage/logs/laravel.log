@@ -1,0 +1,22 @@
+[2021-03-03 20:56:35] local.ERROR: symlink(): No such file or directory {"exception":"[object] (ErrorException(code: 0): symlink(): No such file or directory at /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:263)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php(263): symlink()
+#2 /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Foundation/Console/StorageLinkCommand.php(40): Illuminate\\Filesystem\\Filesystem->link()
+#3 [internal function]: Illuminate\\Foundation\\Console\\StorageLinkCommand->handle()
+#4 /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(33): call_user_func_array()
+#5 /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(91): Illuminate\\Container\\Util::unwrapIfClosure()
+#7 /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#8 /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Container/Container.php(592): Illuminate\\Container\\BoundMethod::call()
+#9 /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Console/Command.php(134): Illuminate\\Container\\Container->call()
+#10 /usr/share/nginx/html/daducha_git/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute()
+#11 /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Console/Command.php(121): Symfony\\Component\\Console\\Command\\Command->run()
+#12 /usr/share/nginx/html/daducha_git/vendor/symfony/console/Application.php(912): Illuminate\\Console\\Command->run()
+#13 /usr/share/nginx/html/daducha_git/vendor/symfony/console/Application.php(264): Symfony\\Component\\Console\\Application->doRunCommand()
+#14 /usr/share/nginx/html/daducha_git/vendor/symfony/console/Application.php(140): Symfony\\Component\\Console\\Application->doRun()
+#15 /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#16 /usr/share/nginx/html/daducha_git/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#17 /usr/share/nginx/html/daducha_git/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#18 {main}
+"} 

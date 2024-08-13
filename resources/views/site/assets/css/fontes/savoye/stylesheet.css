@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Savoye LET';
+    src: url('SavoyeLetPlain.eot');
+    src: url('SavoyeLetPlain.eot?#iefix') format('embedded-opentype'),
+        url('SavoyeLetPlain.woff2') format('woff2'),
+        url('SavoyeLetPlain.woff') format('woff'),
+        url('SavoyeLetPlain.ttf') format('truetype'),
+        url('SavoyeLetPlain.svg#SavoyeLetPlain') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
